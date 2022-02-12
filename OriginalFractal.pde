@@ -20,9 +20,9 @@ public void mousePressed()
 
 public void fractal(int x, int y, float len, int limit) {
   if (len <= limit) {
-    square(x, y, len);
+    rect(x, y, len, len);
   } else {
-    square(x, y, len);
+    rect(x, y, len, len);
     ellipse(x, y, len, len);
     fractal(x, y, (len/2)*sqrt(2), 1);
   }
